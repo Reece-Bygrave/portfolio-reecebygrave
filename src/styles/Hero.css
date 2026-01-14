@@ -1,5 +1,5 @@
 .neon-shapes {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -137,3 +137,95 @@
 
 
   
+.hero {
+  color: white;
+}
+
+.hero-title {
+  font-size: clamp(2.3rem, 4vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.hero-title span {
+  display: block;
+  opacity: 0.9;
+}
+
+.hero-subtitle {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #cfd8ff;
+}
+
+.hero-subtitle span {
+  color: #6be4ff;
+}
+
+.hero-stack {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+.hero-actions {
+  margin-top: 2.2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.75rem 1.6rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #4fd1ff, #6b8cff);
+  color: #000;
+}
+
+.btn.secondary {
+  border: 1px solid rgba(255,255,255,0.25);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.mist {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.18),
+    rgba(255,255,255,0.10),
+    transparent 70%
+  );
+  filter: blur(90px);
+  z-index: 1;
+  pointer-events: none;
+  animation: floatMist 14s ease-in-out infinite;
+}
+
+.mist-1 {
+  top: -180px;
+  left: 10%;
+}
+
+.mist-2 {
+  bottom: -220px;
+  right: 15%;
+  animation-delay: -6s;
+}
+
+@keyframes floatMist {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(0); }
+}

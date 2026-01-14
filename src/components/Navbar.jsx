@@ -3,7 +3,7 @@ import { Github, Mail, Menu, XIcon } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const avatar = "/images/reece-headshot.jpg";
+  const avatar = "/images/reece-ai.png";
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
