@@ -19,7 +19,6 @@ const BackgroundLayout = ({ children }) => {
           />
         ))}
       </div>
-
       {children}
     </div>
   );

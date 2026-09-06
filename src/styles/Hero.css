@@ -135,8 +135,6 @@
     max-width: 100%; /* Ensures responsiveness */
 }
 
-
-  
 .hero {
   color: white;
 }
@@ -195,37 +193,4 @@
 
 .btn:hover {
   transform: translateY(-2px);
-}
-
-.mist {
-  position: absolute;
-  width: 520px;
-  height: 520px;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.18),
-    rgba(255,255,255,0.10),
-    transparent 70%
-  );
-  filter: blur(90px);
-  z-index: 1;
-  pointer-events: none;
-  animation: floatMist 14s ease-in-out infinite;
-}
-
-.mist-1 {
-  top: -180px;
-  left: 10%;
-}
-
-.mist-2 {
-  bottom: -220px;
-  right: 15%;
-  animation-delay: -6s;
-}
-
-@keyframes floatMist {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-40px); }
-  100% { transform: translateY(0); }
 }
