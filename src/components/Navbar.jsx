@@ -52,26 +52,25 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Actions */}
-            <div className="hidden md:flex items-center gap-3">
+            <div className="hidden md:flex items-center gap-2">
               <a
                 href="https://github.com/Reece-Bygrave"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub Profile"
+                title="GitHub Profile"
                 className="rounded-xl p-2 text-slate-300 hover:text-white hover:bg-white/10 transition duration-200"
               >
                 <Github size={18} />
               </a>
 
               <a
-                href="#contact"
-                className="flex items-center gap-2 rounded-xl
-                  bg-gradient-to-r from-cyan-400 to-blue-500
-                  px-4 py-2 text-sm font-semibold text-black
-                  hover:shadow-[0_0_20px_rgba(56,189,248,0.5)] transition duration-200"
+                href="/#contact"
+                aria-label="Contact"
+                title="Contact"
+                className="rounded-xl p-2 text-slate-300 hover:text-white hover:bg-white/10 transition duration-200"
               >
-                <Mail size={15} />
-                Contact
+                <Mail size={18} />
               </a>
             </div>
 
@@ -111,19 +110,20 @@ export default function Navbar() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub Profile"
+                  title="GitHub Profile"
                   className="rounded-lg p-2 text-slate-300 hover:text-white hover:bg-white/10 transition"
                 >
                   <Github size={18} />
                 </a>
 
                 <a
-                  href="#contact"
+                  href="/#contact"
                   onClick={() => setOpen(false)}
-                  className="flex-1 rounded-xl bg-gradient-to-r
-                    from-cyan-400 to-blue-500 px-4 py-2 text-center
-                    text-sm font-semibold text-black shadow-[0_0_15px_rgba(56,189,248,0.3)] transition"
+                  aria-label="Contact"
+                  title="Contact"
+                  className="rounded-lg p-2 text-slate-300 hover:text-white hover:bg-white/10 transition"
                 >
-                  Contact
+                  <Mail size={18} />
                 </a>
               </div>
             </div>
