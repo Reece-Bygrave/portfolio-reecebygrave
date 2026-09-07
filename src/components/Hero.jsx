@@ -30,7 +30,7 @@ const Hero = () => {
         </p>
 
         {/* Snapshot Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full max-w-3xl mb-9 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full max-w-3xl mb-5 text-left">
 
           <div className="p-4 rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-md hover:border-slate-400 dark:hover:border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:shadow-none transition duration-300">
             <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300 mb-1.5">
