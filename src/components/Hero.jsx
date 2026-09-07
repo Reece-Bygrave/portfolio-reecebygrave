@@ -21,7 +21,7 @@ const Hero = () => {
         </Link>
 
         <p className="text-base sm:text-xl md:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-4 transition-colors">
-          Educator | Developer
+          BSc Computer Science Graduate & Educator | Developer
         </p>
 
         {/* Profile Summary */}
