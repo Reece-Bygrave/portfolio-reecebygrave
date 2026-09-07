@@ -7,9 +7,9 @@ import ScrollIndicator from "./ScrollIndicator";
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-28 pb-20 px-4 sm:px-6">
-      
+
       <div className="hero-content relative z-10 text-center max-w-4xl mx-auto text-white flex flex-col items-center">
-        
+
         {/* Availability / Round Box */}
         <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-cyan-400/40 bg-cyan-950/40 backdrop-blur-md mb-6 shadow-[0_0_15px_rgba(34,211,238,0.25)]">
           <span className="relative flex h-2.5 w-2.5">
@@ -25,9 +25,9 @@ const Hero = () => {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-3">
           Reece Bygrave
         </h1>
-        
+
         <p className="text-lg sm:text-2xl font-semibold bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 bg-clip-text text-transparent mb-4">
-          BSc Computer Science Graduate & Educator | Aspiring Automation Developer
+          BSc Computer Science Graduate & Educator | Aspiring Developer
         </p>
 
         {/* CV Profile Summary */}
@@ -37,7 +37,7 @@ const Hero = () => {
 
         {/* CV Snapshot Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full max-w-3xl mb-9 text-left">
-          
+
           <div className="p-4 rounded-xl border border-white/10 bg-black/60 backdrop-blur-md hover:border-cyan-400/60 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition duration-300">
             <div className="flex items-center gap-2 text-cyan-400 mb-1.5">
               <GraduationCap size={18} />
@@ -69,7 +69,7 @@ const Hero = () => {
 
         {/* Action Buttons: GitHub & LinkedIn */}
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-6">
-          
+
           <a
             href="https://github.com/Reece-Bygrave"
             target="_blank"
