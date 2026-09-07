@@ -20,23 +20,14 @@ export default function Navbar() {
 
           <div className="flex h-16 items-center justify-between px-4 md:px-6">
 
-            {/* Logo / Brand Mark */}
-            <Link to="/" className="flex items-center gap-3 group focus:outline-none">
-              <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-zinc-900 via-black to-zinc-900 border border-cyan-500/40 shadow-[0_0_15px_rgba(34,211,238,0.25)] group-hover:border-cyan-400 group-hover:shadow-[0_0_22px_rgba(34,211,238,0.55)] transition-all duration-300">
-                <span className="font-black text-sm tracking-wider bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent group-hover:scale-105 transition-transform">
-                  RB
-                </span>
-                <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.9)]" />
-              </div>
-
-              <div className="flex flex-col">
-                <span className="font-bold tracking-tight text-base sm:text-lg text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-cyan-200 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300">
-                  Reece Bygrave
-                </span>
-                <span className="text-[10px] uppercase font-mono tracking-widest text-slate-400 group-hover:text-cyan-400/80 transition-colors">
-                  Portfolio
-                </span>
-              </div>
+            {/* Brand Title */}
+            <Link to="/" className="flex flex-col focus:outline-none">
+              <span className="font-bold tracking-tight text-base sm:text-lg text-white">
+                Reece Bygrave
+              </span>
+              <span className="text-[10px] uppercase font-mono tracking-widest text-slate-400">
+                Portfolio
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
