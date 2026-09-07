@@ -20,8 +20,8 @@ const Hero = () => {
           </h1>
         </Link>
 
-        <p className="text-lg sm:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-4 transition-colors">
-          Developer
+        <p className="text-base sm:text-xl md:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-4 transition-colors">
+          BSc Computer Science Graduate & Educator | Developer
         </p>
 
         {/* Profile Summary */}

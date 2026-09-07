@@ -178,17 +178,17 @@ const ProjectDetail = () => {
           </div>
         </section>
 
-        {/* Action Button */}
-        <div className="flex justify-center pt-2 pb-4">
-          <a
-            href="mailto:Reecebygraveuk@gmail.com"
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-medium text-xs sm:text-sm text-white dark:text-black bg-slate-900 dark:bg-white hover:bg-slate-800 dark:hover:bg-slate-100 transition duration-300 transform hover:-translate-y-0.5 shadow-sm"
-          >
-            <Mail size={15} />
-            <span>Contact Reece</span>
-          </a>
-        </div>
+      </div>
 
+      {/* Centered Bottom Action Button */}
+      <div className="mt-12 mb-6 flex justify-center items-center text-center">
+        <a
+          href="mailto:Reecebygraveuk@gmail.com"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-sm text-white dark:text-black bg-slate-900 dark:bg-white hover:bg-slate-800 dark:hover:bg-slate-100 transition duration-300 transform hover:-translate-y-0.5 shadow-md"
+        >
+          <Mail size={16} />
+          <span>Contact Reece</span>
+        </a>
       </div>
 
     </div>
