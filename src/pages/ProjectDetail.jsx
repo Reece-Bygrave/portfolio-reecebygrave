@@ -178,19 +178,13 @@ const ProjectDetail = () => {
           </div>
         </section>
 
-        {/* Contact CTA */}
-        <div className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 p-6 text-center shadow-sm transition-colors">
-          <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-1.5 transition-colors">
-            Interested in discussing this project?
-          </h3>
-          <p className="text-xs text-slate-600 dark:text-slate-400 max-w-md mx-auto mb-4 transition-colors">
-            Available for Software Engineer, QA Engineer, or Graduate Developer roles.
-          </p>
+        {/* Action Button */}
+        <div className="flex justify-center pt-2 pb-4">
           <a
             href="mailto:Reecebygraveuk@gmail.com"
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-xl font-medium text-xs sm:text-sm text-white dark:text-black bg-slate-900 dark:bg-white hover:bg-slate-800 dark:hover:bg-slate-100 transition duration-300 transform hover:-translate-y-0.5 shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-medium text-xs sm:text-sm text-white dark:text-black bg-slate-900 dark:bg-white hover:bg-slate-800 dark:hover:bg-slate-100 transition duration-300 transform hover:-translate-y-0.5 shadow-sm"
           >
-            <Mail size={14} />
+            <Mail size={15} />
             <span>Contact Reece</span>
           </a>
         </div>

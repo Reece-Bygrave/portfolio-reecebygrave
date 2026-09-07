@@ -20,9 +20,13 @@ const Home = () => {
           
           <div className="relative z-10 flex flex-col items-center">
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-8 transition-colors">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-3 transition-colors">
               Let's Connect
             </h2>
+
+            <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-lg mb-8 leading-relaxed transition-colors">
+              Have a project in mind, questions about my work, or just want to chat about software and tech? Feel free to reach out anytime.
+            </p>
 
             {/* Quick Action Links */}
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
