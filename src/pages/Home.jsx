@@ -1,22 +1,16 @@
-import React, { useRef } from "react";
+import React from "react";
 import Hero from "../components/Hero";
 import Grid from "../components/Grid";
 import { Mail, FileText, Linkedin, Github, MapPin, Sparkles } from "lucide-react";
 
 const Home = () => {
-  const projectsRef = useRef(null);
-
-  const scrollToProjects = () => {
-    projectsRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div>
       {/* Hero section */}
-      <Hero scrollToProjects={scrollToProjects} />
+      <Hero />
 
       {/* Projects section */}
-      <section ref={projectsRef} id="projects" className="min-h-screen">
+      <section id="projects" className="min-h-screen">
         <Grid />
       </section>
 
