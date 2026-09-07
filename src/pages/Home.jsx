@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Grid from "../components/Grid";
-import { Mail, Linkedin, Github, MapPin, Sparkles } from "lucide-react";
+import { Mail, Linkedin, Github, MapPin } from "lucide-react";
 
 const Home = () => {
   return (
@@ -19,10 +19,6 @@ const Home = () => {
         <div className="relative rounded-3xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-xl p-8 sm:p-12 text-center overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.06)] dark:shadow-none transition-colors duration-300">
           
           <div className="relative z-10 flex flex-col items-center">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 mb-4 transition-colors">
-              <Sparkles size={13} />
-              Open for Opportunities
-            </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-3 transition-colors">
               Let's Connect
