@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A full-stack mobile and cloud tracking system engineered with automated background API polling, spatial data parsing, and live incident mapping.",
     image: "/images/project1.png",
-    role: "Lead Full-Stack & Automation Developer",
+    role: "Lead Full-Stack Developer",
     timeline: "Final Year Capstone Project",
     status: "Completed & Documented",
     github: "https://github.com/Reece-Bygrave",

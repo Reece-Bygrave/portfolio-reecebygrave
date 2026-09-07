@@ -199,7 +199,7 @@ const ProjectDetail = () => {
             Interested in discussing this project?
           </h3>
           <p className="text-xs text-slate-600 dark:text-slate-400 max-w-md mx-auto mb-4 transition-colors">
-            Available for Junior Automation Developer, QA Engineer, or Graduate Software roles.
+            Available for Software Engineer, QA Engineer, or Graduate Developer roles.
           </p>
           <a
             href="mailto:Reecebygraveuk@gmail.com"

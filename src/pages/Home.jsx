@@ -29,7 +29,7 @@ const Home = () => {
             </h2>
 
             <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-lg mb-6 leading-relaxed transition-colors">
-              Seeking Junior Automation Developer, QA Engineer, or Graduate Software Engineering roles. Feel free to reach out directly to discuss upcoming opportunities.
+              Seeking Software Engineering, QA, or Graduate Developer roles. Feel free to reach out directly to discuss upcoming opportunities.
             </p>
 
             <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-8 transition-colors">
