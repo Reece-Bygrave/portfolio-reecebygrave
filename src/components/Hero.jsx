@@ -7,15 +7,15 @@ import ScrollIndicator from "./ScrollIndicator";
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 sm:pt-24 pb-24 px-4 sm:px-6">
-      <div className="hero-content relative z-10 text-center max-w-4xl mx-auto -mt-8 sm:-mt-12 md:-mt-16 text-slate-900 dark:text-white flex flex-col items-center transition-colors">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-24 sm:pt-28 pb-20 px-4 sm:px-6">
+      <div className="hero-content relative z-10 text-center max-w-4xl mx-auto text-slate-900 dark:text-white flex flex-col items-center transition-colors">
         {/* Name & Heading */}
         <Link
           to="/"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="inline-block focus:outline-none cursor-pointer"
+          className="inline-block focus:outline-none cursor-pointer -mt-6 sm:-mt-10 md:-mt-12 mb-7 sm:mb-10 md:mb-12"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-3 text-slate-900 dark:text-white hover:opacity-90 transition-opacity">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight text-slate-900 dark:text-white hover:opacity-90 transition-opacity">
             Reece Bygrave
           </h1>
         </Link>
