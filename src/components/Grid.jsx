@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Terminal, CheckCircle2, Sparkles, ArrowUpRight, ArrowRight, Layers } from "lucide-react";
+import { Sparkles, ArrowUpRight, ArrowRight } from "lucide-react";
 import { projects } from "../data/projectsData";
 import { useTheme } from "../context/ThemeContext";
 
@@ -116,76 +116,31 @@ const Grid = () => {
                   {p.description}
                 </p>
 
-                {/* Key Automation Highlights */}
-                <div
-                  className="rounded-xl p-3.5 sm:p-4 border transition-colors duration-500"
-                  style={{
-                    backgroundColor: isHovered
-                      ? isDark
-                        ? "rgba(255, 255, 255, 0.04)"
-                        : "rgba(0, 0, 0, 0.03)"
-                      : isDark
-                      ? "rgba(255, 255, 255, 0.015)"
-                      : "rgba(0, 0, 0, 0.015)",
-                    borderColor: isHovered
-                      ? isDark
-                        ? "rgba(255, 255, 255, 0.2)"
-                        : "rgba(148, 163, 184, 0.4)"
-                      : isDark
-                      ? "rgba(255, 255, 255, 0.07)"
-                      : "rgba(226, 232, 240, 0.8)"
-                  }}
-                >
-                  <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">
-                    <Terminal size={13} />
-                    <span>Automation Highlights</span>
-                  </div>
-
-                  <ul className="space-y-2">
-                    {p.automationHighlights.map((point, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-                        <CheckCircle2
-                          size={15}
-                          className="mt-0.5 shrink-0 text-slate-500 dark:text-slate-400 transition-colors duration-500"
-                        />
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
                 {/* Tech Stack Pills */}
-                <div className="pt-2">
-                  <div className="flex flex-wrap gap-2">
-                    {p.tech.slice(0, 5).map((t, idx) => (
-                      <span
-                        key={idx}
-                        className="text-xs font-medium px-2.5 py-1 rounded-lg border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-white/[0.03] transition-all duration-500"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                    {p.tech.length > 5 && (
-                      <span className="text-xs font-medium px-2 py-1 rounded-lg border border-slate-200 dark:border-white/10 text-slate-500 dark:text-slate-400">
-                        +{p.tech.length - 5} more
-                      </span>
-                    )}
-                  </div>
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {p.tech.slice(0, 5).map((t, idx) => (
+                    <span
+                      key={idx}
+                      className="text-xs font-medium px-2.5 py-1 rounded-lg border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-white/[0.03] transition-colors duration-500"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                  {p.tech.length > 5 && (
+                    <span className="text-xs font-medium px-2 py-1 rounded-lg border border-slate-200 dark:border-white/10 text-slate-500 dark:text-slate-400">
+                      +{p.tech.length - 5} more
+                    </span>
+                  )}
                 </div>
 
                 {/* Footer Action Link */}
                 <div className="pt-4 mt-auto border-t border-slate-200 dark:border-white/10 flex items-center justify-between">
                   <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 group-hover:text-black dark:group-hover:text-white transition-colors duration-500">
-                    <Layers size={14} />
                     <span>View Project Details</span>
                     <ArrowRight
                       size={14}
                       className="transform group-hover:translate-x-1.5 transition-transform duration-500"
                     />
-                  </span>
-
-                  <span className="text-[11px] font-mono px-2.5 py-1 rounded-md border border-slate-200 dark:border-white/15 text-slate-600 dark:text-slate-400 group-hover:text-black dark:group-hover:text-white bg-slate-50 dark:bg-white/5 tracking-wider transition-all duration-500">
-                    Overview →
                   </span>
                 </div>
 
