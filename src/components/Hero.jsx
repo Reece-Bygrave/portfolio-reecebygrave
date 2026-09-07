@@ -1,5 +1,6 @@
 //src/components/Hero.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import { Github, Linkedin, GraduationCap, Cpu, Globe } from "lucide-react";
 import "../styles/Hero.css";
 import ScrollIndicator from "./ScrollIndicator";
@@ -11,20 +12,26 @@ const Hero = () => {
       <div className="hero-content relative z-10 text-center max-w-4xl mx-auto text-slate-900 dark:text-white flex flex-col items-center transition-colors">
 
         {/* Availability / Round Box */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-cyan-500/30 dark:border-cyan-400/40 bg-cyan-100/60 dark:bg-cyan-950/40 backdrop-blur-md mb-6 shadow-[0_0_15px_rgba(34,211,238,0.15)] dark:shadow-[0_0_15px_rgba(34,211,238,0.25)] transition-colors">
+        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-slate-200 dark:border-cyan-400/40 bg-slate-100 dark:bg-cyan-950/40 backdrop-blur-md mb-6 shadow-sm dark:shadow-[0_0_15px_rgba(34,211,238,0.25)] transition-colors">
           <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-slate-400 dark:bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-slate-600 dark:bg-emerald-500"></span>
           </span>
-          <span className="text-xs sm:text-sm font-medium text-cyan-800 dark:text-cyan-200 tracking-wide">
+          <span className="text-xs sm:text-sm font-medium text-slate-700 dark:text-cyan-200 tracking-wide">
             Open to Opportunities
           </span>
         </div>
 
         {/* Name & Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-3 text-slate-900 dark:text-white transition-colors">
-          Reece Bygrave
-        </h1>
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="inline-block focus:outline-none cursor-pointer"
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-3 text-slate-900 dark:text-white hover:opacity-90 transition-opacity">
+            Reece Bygrave
+          </h1>
+        </Link>
 
         <p className="text-lg sm:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-4 transition-colors">
           BSc Computer Science Graduate & Educator | Aspiring Developer
@@ -62,7 +69,7 @@ const Hero = () => {
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Target Focus</span>
             </div>
             <p className="text-sm font-semibold text-slate-900 dark:text-white">Efficient Automation using AI</p>
-            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Python · AWS · APIs · CI/CD</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Python · AWS · APIs · CI/CDs</p>
           </div>
 
         </div>

@@ -23,8 +23,12 @@ export default function Navbar() {
           <div className="flex h-16 items-center justify-between px-4 md:px-6">
 
             {/* Brand Title */}
-            <Link to="/" className="flex flex-col focus:outline-none">
-              <span className="font-bold tracking-tight text-base sm:text-lg text-slate-900 dark:text-white transition-colors duration-300">
+            <Link
+              to="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="flex flex-col focus:outline-none cursor-pointer group"
+            >
+              <span className="font-bold tracking-tight text-base sm:text-lg text-slate-900 dark:text-white group-hover:opacity-80 transition-opacity duration-200">
                 Reece Bygrave
               </span>
               <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 dark:text-slate-400 transition-colors duration-300">
