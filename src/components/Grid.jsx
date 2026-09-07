@@ -23,7 +23,7 @@ const Grid = () => {
             Selected Automation & Engineering Work
           </h2>
           <p className="mt-2 text-slate-600 dark:text-slate-400 text-base max-w-xl transition-colors">
-            Hands-on software and automation systems demonstrating API ingestion, computer vision, data structures, and pipeline reliability. Click any project to view details.
+            Hands-on software and automation systems demonstrating API ingestion, computer vision, data structures, and pipeline reliability. Click any project to view its full case study.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const Grid = () => {
                     className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-white bg-black/85 backdrop-blur-md border shadow-2xl transition-all duration-500 ease-out transform opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0"
                     style={{ borderColor: p.color }}
                   >
-                    <span>View Project</span>
+                    <span>View Project Case Study</span>
                     <ArrowRight size={14} style={{ color: p.color }} />
                   </span>
                 </div>
@@ -210,7 +210,7 @@ const Grid = () => {
                     style={{ color: isHovered ? p.color : isDark ? "#94a3b8" : "#64748b" }}
                   >
                     <Layers size={14} />
-                    <span>View Project Details</span>
+                    <span>Explore Full Case Study</span>
                     <ArrowRight
                       size={14}
                       className="transform group-hover:translate-x-1.5 transition-transform duration-500"
@@ -229,7 +229,7 @@ const Grid = () => {
                       backgroundColor: isHovered ? `${p.color}15` : "transparent"
                     }}
                   >
-                    Overview →
+                    Deep Dive →
                   </span>
                 </div>
 
