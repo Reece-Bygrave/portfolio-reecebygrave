@@ -9,8 +9,6 @@ import {
   CheckCircle2,
   Mail,
   AlertCircle,
-  Clock,
-  UserCheck,
   Wrench
 } from "lucide-react";
 import { getProjectBySlug } from "../data/projectsData";
@@ -78,22 +76,9 @@ const ProjectDetail = () => {
           {project.title}
         </h1>
 
-        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed mb-5 max-w-3xl transition-colors">
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl transition-colors">
           {project.tagline}
         </p>
-
-        {/* Quick Facts Strip */}
-        <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
-          <div className="flex items-center gap-1.5">
-            <UserCheck size={14} className="text-slate-600 dark:text-slate-300" />
-            <span>Role: <strong className="text-slate-800 dark:text-slate-200 font-semibold">{project.role}</strong></span>
-          </div>
-          <span className="text-slate-300 dark:text-slate-700">•</span>
-          <div className="flex items-center gap-1.5">
-            <Clock size={14} className="text-slate-600 dark:text-slate-300" />
-            <span>Timeline: <strong className="text-slate-800 dark:text-slate-200 font-semibold">{project.timeline}</strong></span>
-          </div>
-        </div>
       </header>
 
       {/* Featured Visual with Key Stats */}
