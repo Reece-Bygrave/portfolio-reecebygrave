@@ -4,7 +4,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
-html,body{
+html, body {
+  min-height: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark, html.dark body {
   background-color: rgb(0, 0, 0);
-  height: 100%;
+  color: #ffffff;
+}
+
+html:not(.dark), html:not(.dark) body {
+  background-color: #f8fafc;
+  color: #0f172a;
 }

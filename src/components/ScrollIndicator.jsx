@@ -11,7 +11,7 @@ export default function ScrollIndicator() {
     <button
       onClick={handleScroll}
       aria-label="Scroll to projects section"
-      className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70 hover:text-white transition"
+      className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500 dark:text-white/70 hover:text-slate-900 dark:hover:text-white transition"
     >
       <span className="text-xs tracking-widest uppercase">View Projects</span>
 

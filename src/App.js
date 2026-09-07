@@ -7,22 +7,25 @@ import About from "./pages/About";
 import Writtern from "./pages/Writtern";
 import BackgroundLayout from "./components/BackgroundLayout";
 import ScrollToTop from "./components/ScrollToTop";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <BackgroundLayout>
-        <Navbar/>  
-        <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} /> 
-        <Route path="/projects/:slug" element={<ProjectDetail />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/writing" element={<Writtern />} />
-      </Routes>
-      </BackgroundLayout>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <BackgroundLayout>
+          <Navbar/>  
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} /> 
+            <Route path="/projects/:slug" element={<ProjectDetail />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/writing" element={<Writtern />} />
+          </Routes>
+        </BackgroundLayout>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

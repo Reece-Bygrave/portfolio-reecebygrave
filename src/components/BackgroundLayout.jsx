@@ -9,8 +9,8 @@ const BackgroundLayout = ({ children }) => {
   }));
 
   return (
-    <div className="relative min-h-screen bg-black text-white">
-      <div className="neon-shapes fixed inset-0 pointer-events-none -z-10">
+    <div className="relative min-h-screen bg-slate-50 dark:bg-black text-slate-900 dark:text-white transition-colors duration-300">
+      <div className="neon-shapes fixed inset-0 pointer-events-none -z-10 opacity-20 dark:opacity-100 transition-opacity duration-300">
         {shapes.map((shape) => (
           <div
             key={shape.id}
