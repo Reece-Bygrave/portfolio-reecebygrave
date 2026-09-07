@@ -11,12 +11,12 @@ const Hero = () => {
       <div className="hero-content relative z-10 text-center max-w-4xl mx-auto text-slate-900 dark:text-white flex flex-col items-center transition-colors">
 
         {/* Availability / Round Box */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-slate-200 dark:border-white/15 bg-white/80 dark:bg-white/5 backdrop-blur-md mb-6 shadow-sm transition-colors">
+        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-cyan-500/30 dark:border-cyan-400/40 bg-cyan-100/60 dark:bg-cyan-950/40 backdrop-blur-md mb-6 shadow-[0_0_15px_rgba(34,211,238,0.15)] dark:shadow-[0_0_15px_rgba(34,211,238,0.25)] transition-colors">
           <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-slate-400 opacity-75"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
           </span>
-          <span className="text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-300 tracking-wide">
+          <span className="text-xs sm:text-sm font-medium text-cyan-800 dark:text-cyan-200 tracking-wide">
             Open to Opportunities
           </span>
         </div>
@@ -38,7 +38,7 @@ const Hero = () => {
         {/* Snapshot Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full max-w-3xl mb-9 text-left">
 
-          <div className="p-4 rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-md hover:border-slate-400 dark:hover:border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:shadow-none transition duration-300">
+          <div className="cursor-emerald-dot p-4 rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-md hover:border-slate-400 dark:hover:border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:shadow-none transition duration-300">
             <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300 mb-1.5">
               <GraduationCap size={18} />
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Education</span>
@@ -47,7 +47,7 @@ const Hero = () => {
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Nottingham Trent · Manchester Met</p>
           </div>
 
-          <div className="p-4 rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-md hover:border-slate-400 dark:hover:border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:shadow-none transition duration-300">
+          <div className="cursor-emerald-dot p-4 rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-md hover:border-slate-400 dark:hover:border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:shadow-none transition duration-300">
             <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300 mb-1.5">
               <Globe size={18} />
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Experience</span>
@@ -56,7 +56,7 @@ const Hero = () => {
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Secondary Computer Science & ICT</p>
           </div>
 
-          <div className="p-4 rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-md hover:border-slate-400 dark:hover:border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:shadow-none transition duration-300">
+          <div className="cursor-emerald-dot p-4 rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-md hover:border-slate-400 dark:hover:border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:shadow-none transition duration-300">
             <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300 mb-1.5">
               <Cpu size={18} />
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Target Focus</span>
