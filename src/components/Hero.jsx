@@ -32,7 +32,7 @@ const Hero = () => {
 
         {/* CV Profile Summary */}
         <p className="max-w-2xl text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed mb-8">
-          Computer Science graduate with a PGCE in Secondary Computing and two years of international teaching experience in Hong Kong. Combining a strong technical foundation with analytical problem-solving and communication skills, I am actively pursuing Junior Automation Developer roles — focusing on automated testing pipelines, workflow scripting, and reliable software delivery.
+          Computer Science graduate with a PGCE in Secondary Computing and two years of international teaching experience in Hong Kong. Combining a strong technical foundation with analytical problem-solving and communication skills — focusing on automated testing pipelines, workflow scripting, and reliable software delivery.
         </p>
 
         {/* CV Snapshot Cards */}

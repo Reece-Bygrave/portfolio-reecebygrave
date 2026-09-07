@@ -1,3 +1,5 @@
+"use client";
+
 export default function ScrollIndicator() {
   const handleScroll = () => {
     document.querySelector("#projects")?.scrollIntoView({
@@ -8,21 +10,19 @@ export default function ScrollIndicator() {
   return (
     <button
       onClick={handleScroll}
-      aria-label="Scroll to view projects section"
-      className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-400 hover:text-cyan-400 transition group cursor-pointer"
+      aria-label="Scroll to projects section"
+      className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70 hover:text-white transition"
     >
-      <span className="text-[11px] sm:text-xs font-semibold tracking-wider uppercase group-hover:tracking-widest transition-all duration-300">
-        Scroll to View Projects
-      </span>
+      <span className="text-xs tracking-widest uppercase">Scroll</span>
 
-      <div className="animate-scroll-bounce p-1.5 rounded-full border border-white/10 group-hover:border-cyan-400/50 group-hover:shadow-[0_0_12px_rgba(34,211,238,0.4)] transition duration-300">
+      <div className="animate-scroll-bounce">
         <svg
-          width="18"
-          height="18"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          strokeWidth="2.5"
+          strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         >
