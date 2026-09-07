@@ -7,8 +7,8 @@ import ScrollIndicator from "./ScrollIndicator";
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-28 pb-20 px-4 sm:px-6">
-      <div className="hero-content relative z-10 text-center max-w-4xl mx-auto text-slate-900 dark:text-white flex flex-col items-center transition-colors">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 sm:pt-24 pb-24 px-4 sm:px-6">
+      <div className="hero-content relative z-10 text-center max-w-4xl mx-auto -mt-8 sm:-mt-12 md:-mt-16 text-slate-900 dark:text-white flex flex-col items-center transition-colors">
         {/* Name & Heading */}
         <Link
           to="/"
@@ -21,7 +21,7 @@ const Hero = () => {
         </Link>
 
         <p className="text-lg sm:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-4 transition-colors">
-          BSc Computer Science Graduate & Educator | Aspiring Developer
+          Developer
         </p>
 
         {/* Profile Summary */}
