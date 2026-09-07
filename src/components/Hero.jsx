@@ -61,8 +61,8 @@ const Hero = () => {
               <Cpu size={18} />
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Target Focus</span>
             </div>
-            <p className="text-sm font-semibold text-slate-900 dark:text-white">Aspiring Automation Developer</p>
-            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Python · Selenium · SQL · APIs</p>
+            <p className="text-sm font-semibold text-slate-900 dark:text-white">Efficient Automation using AI</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Python · AWS · APIs · CI/CD</p>
           </div>
 
         </div>
