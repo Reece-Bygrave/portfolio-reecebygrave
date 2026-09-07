@@ -6,13 +6,15 @@ import ProjectDetail from "./pages/ProjectDetail";
 import About from "./pages/About";
 import Writtern from "./pages/Writtern";
 import BackgroundLayout from "./components/BackgroundLayout";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
-    <BackgroundLayout>
-      <Navbar/>  
-      <Routes>
+      <ScrollToTop />
+      <BackgroundLayout>
+        <Navbar/>  
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} /> 
         <Route path="/projects/:slug" element={<ProjectDetail />} />
