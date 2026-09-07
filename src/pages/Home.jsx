@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Grid from "../components/Grid";
-import { Mail, Linkedin, Github, MapPin } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 const Home = () => {
   return (
@@ -20,18 +20,9 @@ const Home = () => {
           
           <div className="relative z-10 flex flex-col items-center">
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-3 transition-colors">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-8 transition-colors">
               Let's Connect
             </h2>
-
-            <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-lg mb-6 leading-relaxed transition-colors">
-              Seeking Software Engineering, QA, or Graduate Developer roles. Feel free to reach out directly to discuss upcoming opportunities.
-            </p>
-
-            <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-8 transition-colors">
-              <MapPin size={15} className="text-slate-500 dark:text-slate-400" />
-              <span>Available for Remote, Hybrid & On-site roles</span>
-            </div>
 
             {/* Quick Action Links */}
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
