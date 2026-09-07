@@ -32,7 +32,7 @@ const Hero = () => {
 
         {/* CV Profile Summary */}
         <p className="max-w-2xl text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed mb-8">
-          Computer Science graduate with a PGCE in Secondary Computing and two years of international teaching experience in Hong Kong. Combining a strong technical foundation with analytical problem-solving and communication skills — focusing on automated testing pipelines, workflow scripting, and reliable software delivery.
+          Computer Science graduate with a PGCE in Secondary Computing and two years of international teaching experience in Hong Kong. Combining a strong technical foundation with analytical problem-solving and communication skills — with foucs on building and maintainingreliable software through automation, testing and AI intergration
         </p>
 
         {/* CV Snapshot Cards */}
@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="p-4 rounded-xl border border-white/10 bg-black/60 backdrop-blur-md hover:border-cyan-400/60 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition duration-300">
             <div className="flex items-center gap-2 text-cyan-400 mb-1.5">
               <GraduationCap size={18} />
-              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Education & PGCE</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Education</span>
             </div>
             <p className="text-sm font-semibold text-white">BSc Computer Science & PGCE</p>
             <p className="text-xs text-slate-400 mt-0.5">Nottingham Trent · Manchester Met</p>
