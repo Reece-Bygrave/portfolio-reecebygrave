@@ -26,7 +26,7 @@ const Hero = () => {
 
         {/* Profile Summary */}
         <p className="max-w-2xl text-slate-600 dark:text-slate-400 text-sm sm:text-base md:text-lg leading-relaxed mb-8 transition-colors">
-          Computer Science graduate with a PGCE in Secondary Computing and two years of international teaching experience in Hong Kong. Combining a strong technical foundation with analytical problem-solving and communication skills — with focus on building and maintaining reliable software through automation, testing and AI integration.
+          Computer Science graduate with a PGCE in Secondary Computing and two years’ international teaching experience in Hong Kong. Strong technical and analytical skills, with a focus on reliable software, automation, testing and AI integration.
         </p>
 
         {/* Snapshot Cards */}
