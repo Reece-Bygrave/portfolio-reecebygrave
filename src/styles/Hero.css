@@ -21,17 +21,17 @@ html.dark {
   /* Dark Theme: Electric cyberpunk neons that glow against pure black */
   --shape-red: #ff2a55;         /* Electric Neon Crimson */
   --shape-yellow: #ffd000;      /* Electric Cyber Yellow */
-  --shape-blue: #00d2ff;        /* Electric Cyan / Blue */
+  --shape-blue: #1d4ed8;        /* Deep Royal / Dark Blue */
   --shape-green: #00ff88;       /* Electric Neon Mint / Lime */
 
   --shape-red-shadow: 0 0 20px #ff2a55, 0 0 45px rgba(255, 42, 85, 0.6);
   --shape-yellow-shadow: 0 0 20px #ffd000, 0 0 45px rgba(255, 208, 0, 0.6);
-  --shape-blue-shadow: 0 0 20px #00d2ff, 0 0 45px rgba(0, 210, 255, 0.6);
+  --shape-blue-shadow: 0 0 20px #1d4ed8, 0 0 45px rgba(29, 78, 216, 0.65);
   --shape-green-shadow: 0 0 20px #00ff88, 0 0 45px rgba(0, 255, 136, 0.6);
 
   --shape-red-bg: rgba(255, 42, 85, 0.06);
   --shape-yellow-bg: rgba(255, 208, 0, 0.06);
-  --shape-blue-bg: rgba(0, 210, 255, 0.06);
+  --shape-blue-bg: rgba(29, 78, 216, 0.08);
   --shape-green-bg: rgba(0, 255, 136, 0.06);
 }
 
