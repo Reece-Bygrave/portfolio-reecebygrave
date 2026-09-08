@@ -16,11 +16,8 @@ const Grid = () => {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight transition-colors">
-            Selected Automation & Engineering Work
+            Projects
           </h2>
-          <p className="mt-2 text-slate-600 dark:text-slate-400 text-base max-w-xl transition-colors">
-            Hands-on software and automation systems demonstrating API ingestion, computer vision, data structures, and pipeline reliability. Click any project to view details.
-          </p>
         </div>
 
         <a
