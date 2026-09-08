@@ -1,3 +1,40 @@
+/* Theme variables for ambient floating shapes */
+:root {
+  /* Light Theme: Rich, high-contrast jewel tones that pop crisply on light backgrounds */
+  --shape-red: #e11d48;         /* Vibrant Ruby / Crimson */
+  --shape-yellow: #d97706;      /* Deep Golden Amber (visible, unlike pale yellow) */
+  --shape-blue: #2563eb;        /* Vivid Royal Sapphire Blue */
+  --shape-green: #059669;       /* Rich Emerald Green (visible, unlike pale lime) */
+
+  --shape-red-shadow: 0 0 16px rgba(225, 29, 72, 0.4), 0 0 32px rgba(225, 29, 72, 0.2);
+  --shape-yellow-shadow: 0 0 16px rgba(217, 119, 6, 0.4), 0 0 32px rgba(217, 119, 6, 0.2);
+  --shape-blue-shadow: 0 0 16px rgba(37, 99, 235, 0.4), 0 0 32px rgba(37, 99, 235, 0.2);
+  --shape-green-shadow: 0 0 16px rgba(5, 150, 105, 0.4), 0 0 32px rgba(5, 150, 105, 0.2);
+
+  --shape-red-bg: rgba(225, 29, 72, 0.08);
+  --shape-yellow-bg: rgba(217, 119, 6, 0.08);
+  --shape-blue-bg: rgba(37, 99, 235, 0.08);
+  --shape-green-bg: rgba(5, 150, 105, 0.08);
+}
+
+html.dark {
+  /* Dark Theme: Electric cyberpunk neons that glow against pure black */
+  --shape-red: #ff2a55;         /* Electric Neon Crimson */
+  --shape-yellow: #ffd000;      /* Electric Cyber Yellow */
+  --shape-blue: #00d2ff;        /* Electric Cyan / Blue */
+  --shape-green: #00ff88;       /* Electric Neon Mint / Lime */
+
+  --shape-red-shadow: 0 0 20px #ff2a55, 0 0 45px rgba(255, 42, 85, 0.6);
+  --shape-yellow-shadow: 0 0 20px #ffd000, 0 0 45px rgba(255, 208, 0, 0.6);
+  --shape-blue-shadow: 0 0 20px #00d2ff, 0 0 45px rgba(0, 210, 255, 0.6);
+  --shape-green-shadow: 0 0 20px #00ff88, 0 0 45px rgba(0, 255, 136, 0.6);
+
+  --shape-red-bg: rgba(255, 42, 85, 0.06);
+  --shape-yellow-bg: rgba(255, 208, 0, 0.06);
+  --shape-blue-bg: rgba(0, 210, 255, 0.06);
+  --shape-green-bg: rgba(0, 255, 136, 0.06);
+}
+
 .neon-shapes {
   position: fixed;
   top: 0;
@@ -10,15 +47,27 @@
 
 /* === ANIMATIONS === */
 
-/* Smooth slow pulse */
-@keyframes slowPulse {
+/* Soft pulse for light mode: keeps shape defined with controlled gentle glow */
+@keyframes slowPulseLight {
   0%, 100% {
-    opacity: 1;     /* subtle glow */
-    filter: blur(10px);   /* always blurry */
+    opacity: 0.75;
+    filter: blur(3px);
   }
   50% {
-    opacity: 10;           /* stronger glow */
-    filter: blur(40px);    /* maximum glow */
+    opacity: 0.95;
+    filter: blur(10px);
+  }
+}
+
+/* Atmospheric neon bloom for dark mode */
+@keyframes slowPulseDark {
+  0%, 100% {
+    opacity: 0.8;
+    filter: blur(8px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(24px);
   }
 }
 
@@ -69,14 +118,20 @@
     box-shadow: 0 0 8px 2px rgba(0, 255, 255, 0.5); /* back to normal glow */
   }
 }
+
 /* === SHAPE STYLING === */
 
 .shape {
   position: absolute;
   animation:
-    slowPulse 15s ease-in-out infinite, /* slower pulse */
-    float 12s ease-in-out infinite;   /* floating stays the same */
-    will-change: transform, opacity; /* GPU optimization */ 
+    slowPulseLight 15s ease-in-out infinite,
+    float 12s ease-in-out infinite;
+  will-change: transform, opacity, filter;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+html.dark .shape {
+  animation-name: slowPulseDark, float;
 }
 
 /* Circles (odd numbers) */
@@ -84,48 +139,52 @@
   border-radius: 50%;
 }
 
-/* Squares (even numbers) */
+/* Rounded squares (even numbers) */
 .shape:nth-child(even) {
-  border-radius: 0;
+  border-radius: 14px;
 }
 
 /* === POSITIONS (16 shapes) === */
 .shape-1  { top: 10%; left: 8%;  width: 50px; height: 50px; }
-.shape-4  { top: 50%; left: 5%;  width: 70px; height: 70px; }
-.shape-3  { bottom: 15%; left: 6%; width: 40px; height: 40px; }
 .shape-2  { top: 15%; right: 10%; width: 70px; height: 70px; }
+.shape-3  { bottom: 15%; left: 6%; width: 40px; height: 40px; }
+.shape-4  { top: 50%; left: 5%;  width: 70px; height: 70px; }
 .shape-5  { bottom: 10%; right: 6%; width: 60px; height: 60px; }
 .shape-6  { top: 40%; right: 4%; width: 50px; height: 50px; }
-
+.shape-7  { top: 65%; right: 8%; width: 45px; height: 45px; }
 .shape-8  { top: 5%; right: 20%; width: 55px; height: 55px; }
 .shape-9  { top: 5%; left: 25%; width: 40px; height: 40px; }
 .shape-10 { top: 5%; left: 45%; width: 50px; height: 50px; }
 .shape-11 { top: 5%; right: 35%; width: 45px; height: 45px; }
-
+.shape-12 { bottom: 45%; left: 7%; width: 50px; height: 50px; }
 .shape-13 { bottom: 5%; left: 15%; width: 50px; height: 50px; }
 .shape-14 { bottom: 5%; left: 40%; width: 60px; height: 60px; }
 .shape-15 { bottom: 5%; right: 30%; width: 45px; height: 45px; }
 .shape-16 { bottom: 5%; right: 10%; width: 55px; height: 55px; }
 
-/* === NEON COLORS === */
+/* === SHAPE COLOR GROUPS === */
 .shape-1, .shape-5, .shape-9, .shape-13 {
-  border: 2px solid red;
-  box-shadow: 0 0 20px red, 0 0 40px red;
+  border: 2px solid var(--shape-red);
+  box-shadow: var(--shape-red-shadow);
+  background-color: var(--shape-red-bg);
 }
 
 .shape-2, .shape-6, .shape-10, .shape-14 {
-  border: 2px solid yellow;
-  box-shadow: 0 0 20px yellow, 0 0 40px yellow;
+  border: 2px solid var(--shape-yellow);
+  box-shadow: var(--shape-yellow-shadow);
+  background-color: var(--shape-yellow-bg);
 }
 
 .shape-3, .shape-7, .shape-11, .shape-15 {
-  border: 2px solid blue;
-  box-shadow: 0 0 20px blue, 0 0 40px blue;
+  border: 2px solid var(--shape-blue);
+  box-shadow: var(--shape-blue-shadow);
+  background-color: var(--shape-blue-bg);
 }
 
 .shape-4, .shape-8, .shape-12, .shape-16 {
-  border: 2px solid limegreen;
-  box-shadow: 0 0 20px limegreen, 0 0 40px limegreen;
+  border: 2px solid var(--shape-green);
+  box-shadow: var(--shape-green-shadow);
+  background-color: var(--shape-green-bg);
 }
 
 .content-box{
