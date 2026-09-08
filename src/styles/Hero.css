@@ -148,7 +148,7 @@ html.dark .shape {
 .shape-1  { top: 10%; left: 8%;  width: 50px; height: 50px; }
 .shape-2  { top: 15%; right: 10%; width: 70px; height: 70px; }
 .shape-3  { bottom: 15%; left: 6%; width: 40px; height: 40px; }
-.shape-4  { top: 50%; left: 5%;  width: 70px; height: 70px; }
+.shape-4  { top: 30%; left: 5%;  width: 65px; height: 65px; }
 .shape-5  { bottom: 10%; right: 6%; width: 60px; height: 60px; }
 .shape-6  { top: 40%; right: 4%; width: 50px; height: 50px; }
 .shape-7  { top: 65%; right: 8%; width: 45px; height: 45px; }
@@ -156,7 +156,7 @@ html.dark .shape {
 .shape-9  { top: 5%; left: 25%; width: 40px; height: 40px; }
 .shape-10 { top: 5%; left: 45%; width: 50px; height: 50px; }
 .shape-11 { top: 5%; right: 35%; width: 45px; height: 45px; }
-.shape-12 { bottom: 45%; left: 7%; width: 50px; height: 50px; }
+.shape-12 { bottom: 30%; left: 7%; width: 50px; height: 50px; }
 .shape-13 { bottom: 5%; left: 15%; width: 50px; height: 50px; }
 .shape-14 { bottom: 5%; left: 40%; width: 60px; height: 60px; }
 .shape-15 { bottom: 5%; right: 30%; width: 45px; height: 45px; }
