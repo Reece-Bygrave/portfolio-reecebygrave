@@ -39,7 +39,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="min-h-screen pt-28 pb-20 px-4 sm:px-6 max-w-4xl mx-auto">
+    <div className="min-h-screen pt-28 pb-12 sm:pb-16 px-4 sm:px-6 max-w-4xl mx-auto">
       
       {/* Top Navigation */}
       <div className="flex items-center mb-6">
@@ -168,7 +168,7 @@ const ProjectDetail = () => {
       </div>
 
       {/* Centered Bottom Action Button */}
-      <div className="mt-12 mb-6 flex justify-center items-center text-center">
+      <div className="mt-12 sm:mt-16 flex justify-center items-center text-center">
         <a
           href="mailto:Reecebygraveuk@gmail.com"
           className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-sm text-white dark:text-black bg-slate-900 dark:bg-white hover:bg-slate-800 dark:hover:bg-slate-100 transition duration-300 transform hover:-translate-y-0.5 shadow-md"
