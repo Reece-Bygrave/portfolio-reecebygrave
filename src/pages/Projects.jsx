@@ -3,7 +3,7 @@ import Grid from '../components/Grid';
 
 const Projects = () => {
   return (
-    <div>
+    <div className="min-h-screen pb-16">
        <Grid/>
     </div>
     

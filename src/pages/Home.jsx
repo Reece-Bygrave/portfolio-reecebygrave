@@ -10,12 +10,12 @@ const Home = () => {
       <Hero />
 
       {/* Projects section */}
-      <section id="projects" className="min-h-screen">
+      <section id="projects">
         <Grid />
       </section>
 
       {/* Contact Quick Connect Section */}
-      <section id="contact" className="py-24 px-4 sm:px-6 max-w-4xl mx-auto">
+      <section id="contact" className="pt-6 sm:pt-10 pb-20 sm:pb-24 px-4 sm:px-6 max-w-4xl mx-auto">
         <div className="relative rounded-3xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-xl p-8 sm:p-12 text-center overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.06)] dark:shadow-none transition-colors duration-300">
           
           <div className="relative z-10 flex flex-col items-center">

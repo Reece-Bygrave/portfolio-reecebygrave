@@ -10,7 +10,7 @@ const Grid = () => {
   const isDark = theme === "dark";
 
   return (
-    <div className="px-4 py-28 max-w-6xl mx-auto">
+    <div className="px-4 pt-20 sm:pt-28 pb-8 sm:pb-12 max-w-6xl mx-auto">
       
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
