@@ -21,12 +21,12 @@ const Hero = () => {
         </Link>
 
         <p className="text-base sm:text-xl md:text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-4 transition-colors">
-          Educator | Developer
+          BSc Computer Science Graduate & Educator | Developer
         </p>
 
         {/* Profile Summary */}
         <p className="max-w-2xl text-slate-600 dark:text-slate-400 text-sm sm:text-base md:text-lg leading-relaxed mb-8 transition-colors">
-          With a focus on reliable software, automation, testing and AI integration.
+          Computer Science graduate with a PGCE in Secondary Computing and two years’ international teaching experience in Hong Kong. Strong technical and analytical skills, with a focus on reliable software, automation, testing and AI integration.
         </p>
 
         {/* Snapshot Cards */}

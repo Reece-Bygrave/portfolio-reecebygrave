@@ -13,16 +13,21 @@ const Grid = () => {
     <div className="px-4 pt-20 sm:pt-28 pb-8 sm:pb-12 max-w-6xl mx-auto">
       
       {/* Section Header */}
-      <div className="text-center mb-10 sm:mb-12 flex flex-col items-center">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight transition-colors mb-3">
-          Projects
-        </h2>
+      <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-12 gap-4">
+        <div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight transition-colors">
+            Projects
+          </h2>
+          <p className="mt-2 text-slate-600 dark:text-slate-400 text-base max-w-xl transition-colors">
+            With a focus on reliable software, automation, testing and AI integration.
+          </p>
+        </div>
 
         <a
           href="https://github.com/Reece-Bygrave"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition group"
+          className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-black dark:hover:text-white transition group self-start md:self-auto"
         >
           <span>View All on GitHub</span>
           <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
