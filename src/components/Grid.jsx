@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowUpRight, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { projects } from "../data/projectsData";
 import { useTheme } from "../context/ThemeContext";
 
@@ -13,25 +13,13 @@ const Grid = () => {
     <div className="px-4 pt-20 sm:pt-28 pb-8 sm:pb-12 max-w-6xl mx-auto">
       
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-        <div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight transition-colors">
-            Selected Automation & Engineering Work
-          </h2>
-          <p className="mt-2 text-slate-600 dark:text-slate-400 text-base max-w-xl transition-colors">
-            Hands-on software and automation systems demonstrating API ingestion, computer vision, data structures, and pipeline reliability. Click any project to view details.
-          </p>
-        </div>
-
-        <a
-          href="https://github.com/Reece-Bygrave"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-black dark:hover:text-white transition group self-start md:self-auto"
-        >
-          <span>View All on GitHub</span>
-          <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-        </a>
+      <div className="mb-12 max-w-2xl">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight transition-colors">
+          Selected Automation & Engineering Work
+        </h2>
+        <p className="mt-2 text-slate-600 dark:text-slate-400 text-base leading-relaxed transition-colors">
+          Hands-on software and automation systems demonstrating API ingestion, computer vision, data structures, and pipeline reliability. Click any project to view details.
+        </p>
       </div>
 
       {/* 2 Featured Project Cards */}
